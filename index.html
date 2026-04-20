@@ -313,6 +313,79 @@
         }
         .tool-link i { margin-right: 4px; }
 
+        /* Practice Materials card */
+        .materials-card {
+            background: linear-gradient(135deg, #FFF4EF 0%, #FFE8DA 100%);
+            border-left: 4px solid var(--brand-accent);
+            padding: 20px 22px;
+            border-radius: 10px;
+            margin-bottom: 16px;
+        }
+        .materials-card h5 {
+            color: var(--brand-accent);
+            font-weight: 800;
+            margin-bottom: 6px;
+            font-size: 1.02rem;
+        }
+        .materials-card .materials-sub {
+            color: var(--text-body);
+            font-size: 0.9rem;
+            margin-bottom: 14px;
+            line-height: 1.55;
+        }
+        .materials-main-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white !important;
+            padding: 10px 22px;
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 14px;
+            font-size: 0.93rem;
+            box-shadow: 0 3px 10px rgba(255,107,53,0.3);
+            transition: all 0.2s;
+        }
+        .materials-main-btn:hover {
+            box-shadow: 0 5px 14px rgba(255,107,53,0.4);
+            transform: translateY(-1px);
+            color: white;
+        }
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        .materials-link {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: white;
+            padding: 9px 12px;
+            border-radius: 8px;
+            font-size: 0.87rem;
+            color: var(--text-main);
+            text-decoration: none;
+            border: 1px solid #F3D4BF;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        .materials-link:hover {
+            border-color: var(--brand-accent);
+            color: var(--brand-accent);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 6px rgba(255,107,53,0.15);
+        }
+        .materials-link .count {
+            color: var(--text-muted);
+            font-size: 0.74rem;
+            margin-left: auto;
+            font-weight: 400;
+        }
+        @media (max-width: 700px) {
+            .materials-grid { grid-template-columns: 1fr; }
+        }
+
         /* Security (traffic light) card */
         .security-card {
             background: var(--bg-dark);
@@ -602,6 +675,35 @@
                         <a href="https://notebooklm.google.com" target="_blank" class="tool-link"><i class="bi bi-book"></i>NotebookLM</a>
                         <a href="https://claude.ai" target="_blank" class="tool-link"><i class="bi bi-robot"></i>Claude AI</a>
                         <a href="https://aistudio.google.com" target="_blank" class="tool-link"><i class="bi bi-palette"></i>Google AI Studio</a>
+                    </div>
+                </div>
+
+                <!-- Practice Materials -->
+                <div class="materials-card">
+                    <h5><i class="bi bi-paperclip me-1"></i>📎 課堂練習檔案 — 不想碰公司敏感資料？用這包模擬資料練！</h5>
+                    <div class="materials-sub">完整仿真的萬波島嶼紅茶營運資料，<strong>141 份檔案 × 6 大類</strong>，涵蓋 82 門市、外送平台、會計政策、加盟合約，全部去識別化，可大膽丟給 AI 練習。</div>
+                    <a href="https://drive.google.com/drive/folders/11Bu4CmyKn83MRHL4XCtW0h5GlO_Lc24x" target="_blank" class="materials-main-btn">
+                        <i class="bi bi-box-arrow-up-right me-1"></i>開啟所有練習檔案（Google Drive）
+                    </a>
+                    <div class="materials-grid">
+                        <a href="https://drive.google.com/drive/folders/1y5sTjuPAocuShz3Sk4mM8JRd-PEhiSzm" target="_blank" class="materials-link">
+                            💰 費用歸類 <span class="count">15 檔</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1DAs8K8A3yEHclNEriXtwRM8N3bwCdNJY" target="_blank" class="materials-link">
+                            📊 報表摘要 <span class="count">12 檔</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1oXO2CIDwJcVXPtjnqXW3sE666i7X-gm6" target="_blank" class="materials-link">
+                            📋 SOP 筆記 <span class="count">20 檔</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1w5Kr2WzL09mfH2G2hKovvNuPkn4Q0mzO" target="_blank" class="materials-link">
+                            ✉️ 公告 Email <span class="count">10 檔</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1l0CMKqB0ZgChRSj15PsfB00eZyoLT2u8" target="_blank" class="materials-link">
+                            📈 Excel 原始資料 <span class="count">13 檔</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1oD9D2FQsQX1lse9YLM017IU6_8QTaakt" target="_blank" class="materials-link">
+                            📚 NotebookLM 文件 <span class="count">23 檔</span>
+                        </a>
                     </div>
                 </div>
 
